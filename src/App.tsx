@@ -375,6 +375,17 @@ function Experience() {
   const jobs = [
     {
       icon: <Code2 size={16} />,
+      role: 'Software Engineer Intern',
+      company: 'Techlogix - OBDX Department',
+      period: 'Jul 2026 – Aug 2026',
+      bullets: [
+        'Developed features for a project/task management dashboard within the Oracle Banking Digital Experience (OBDX) suite using SASS, Knockout.js, and Oracle JET',
+        'Built TaskLite, a lightweight task management app, and packaged it as a cross-platform mobile app using Apache Cordova',
+        'Worked with Require.js for modular JavaScript architecture and communicated directly with bank clients on requirements and feature feedback',
+      ],
+    },
+    {
+      icon: <Code2 size={16} />,
       role: 'Full Stack Development & QA Intern',
       company: 'AICE Xpert',
       period: 'Feb 2026 – Jul 2026',
@@ -625,8 +636,7 @@ function Projects() {
       ],
       images: [samcardLandingImg, samcardDashboardImg, samcardEditorImg, samcardQrImg],
       isBrowser: true,
-      github: 'https://github.com/aice-xpert/samcard',
-      live: 'https://samcard.vercel.app/login',
+      github: 'https://github.com/aice-xpert/samcard'
     },
     {
       title: 'Vision Transformers for Breast Cancer',
@@ -735,11 +745,6 @@ function Projects() {
                   {p.github && (
                     <a href={p.github} target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ fontSize: 12, padding: '7px 14px' }}>
                       <GithubIcon size={13} /> GitHub
-                    </a>
-                  )}
-                  {p.live && (
-                    <a href={p.live} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ fontSize: 12, padding: '7px 14px' }}>
-                      <ExternalLink size={13} /> Live Demo
                     </a>
                   )}
                   {(p as any).presentation && (
